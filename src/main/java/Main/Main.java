@@ -10,5 +10,27 @@ public class Main {
         int x = in.nextInt();
         int y = in.nextInt();
         String operation = in.next();
+
+        switch (operation){
+
+            case "+":
+                System.out.println("Результат: " + (x + y));
+                break;
+
+            case "-":
+                System.out.println("Результат: " + (x - y));
+                break;
+
+            case "*":
+                System.out.println("Результат: " + (x * y));
+                break;
+
+            case "/":
+                System.out.println("Результат: " + (x / y));
+                break;
+
+            default:
+                System.out.println("Ошибка операции");
+        }
     }
 }
