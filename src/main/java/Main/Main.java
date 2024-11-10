@@ -11,7 +11,7 @@ public class Main {
         int y = in.nextInt();
         String operation = in.next();
 
-        switch (operation){
+        switch (operation) {
 
             case "+":
                 System.out.println("Результат: " + (x + y));
@@ -26,7 +26,11 @@ public class Main {
                 break;
 
             case "/":
-                System.out.println("Результат: " + (x / y));
+                if (x == 0 || y == 0){
+                    System.out.println("Ошибка. Деление с 0 запрещено");
+                    break;
+                }
+                    System.out.println("Результат: " + (x / y));
                 break;
 
             default:
